@@ -7,13 +7,16 @@ def turn_count(board)
       turns+=1
     end
   end
+  turns
 end
 
 def current_player(board)
   turn_count(board)
-  if turns%2==0
+  if turns==0 || turns%2==0
     player="X"
-  else
+  elsif turns>0 && turns%2!=0
     player="O"
+  else
+    nil
   end
 end
