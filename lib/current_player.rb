@@ -9,6 +9,7 @@ def turn_count(board)
 end
 
 def current_player(board)
+  turn_count(board)
   if turns%2==0
     player="X"
   else
