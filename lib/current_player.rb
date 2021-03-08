@@ -12,6 +12,7 @@ end
 
 def current_player(board)
   turn_count(board)
+  board.each do |turn|
   if turns==0 || turns%2==0
     player="X"
   elsif turns>0 && turns%2!=0
