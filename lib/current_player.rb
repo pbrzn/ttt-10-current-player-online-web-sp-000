@@ -1,3 +1,4 @@
+board=[" "," "," "," "," "," "," "," "," "]
 turns=0
 player="X"
 def turn_count(board)
